@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: aic8800-ipk-files
-        path: bin/packages/x86_64/base/*aic8800*.ipk
+        path: bin/packages/x86_64/**/*.ipk
