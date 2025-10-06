@@ -27,7 +27,7 @@ jobs:
       run: make defconfig
 
     - name: Build the driver package
-      run: make package/aic8800-driver/compile -j$(nproc) V=s
+      run: make -j$(nproc) V=s
 
     - name: Upload IPK artifacts
       uses: actions/upload-artifact@v4
